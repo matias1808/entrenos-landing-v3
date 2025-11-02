@@ -364,28 +364,54 @@
     </div>
   </section>
 
-  <!-- Nuestra historia -->
-  <section id="story">
-    <div class="container">
-      <h2 class="section-title">Nuestra historia</h2>
-      <p class="section-sub">Romper el silencio y la desinformación para construir bienestar adolescente.</p>
-      <div class="grid cols-2">
-        <div class="card">
-          <p>EntreNos nació al ver que muchas y muchos adolescentes buscan respuestas en Internet y en redes, pero encuentran mitos, juicios y mensajes que confunden. Queríamos un <strong>espacio confiable</strong>, con lenguaje cercano y libre de prejuicios, donde pudieran informarse y sentirse acompañados.</p>
-          <p>Por eso combinamos <strong>educación sexual integral</strong>, <strong>acompañamiento empático</strong> y <strong>tecnología</strong>: contenidos verificados por profesionales y un <strong>chatbot educativo 24/7</strong> que responde dudas inmediatas y deriva a especialistas cuando es necesario. Todo en un entorno <strong>anónimo y seguro</strong>.</p>
-          <p>Hoy seguimos construyendo con colegios, familias y organizaciones para que hablar de estos temas sea más fácil, informado y sin vergüenza.</p>
-        </div>
-        <div class="card">
-          <div class="video">
-            <iframe src="https://www.youtube.com/embed/B8LwC_fYlRA?rel=0&modestbranding=1&playsinline=1"
-              title="EntreNos Storytelling" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </div>
+  <!-- ===== Estilos para centrar el video (puedes ponerlos en tu <style> global) ===== -->
+<style>
+  /* Centra el contenedor del video dentro de la card */
+  #story .video{
+    width: 100%;
+    max-width: 880px;         /* controla el ancho máximo del video */
+    margin: 0 auto;           /* <-- centra horizontalmente */
+    display: flex;
+    justify-content: center;  /* extra por si el iframe tiene ancho menor */
+  }
+  /* Iframe responsive y centrado */
+  #story .video iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;     /* mantiene proporción 16:9 */
+    height: auto;
+    display: block;
+    border: 0;
+    border-radius: 12px;      /* opcional: mismo look que tus cards */
+  }
+</style>
+
+<!-- ===== Nuestra historia (tu sección, sin cambiar tu estructura) ===== -->
+<section id="story">
+  <div class="container">
+    <h2 class="section-title">Nuestra historia</h2>
+    <p class="section-sub">Romper el silencio y la desinformación para construir bienestar adolescente.</p>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <p>EntreNos nació al ver que muchas y muchos adolescentes buscan respuestas en Internet y en redes, pero encuentran mitos, juicios y mensajes que confunden. Queríamos un <strong>espacio confiable</strong>, con lenguaje cercano y libre de prejuicios, donde pudieran informarse y sentirse acompañados.</p>
+        <p>Por eso combinamos <strong>educación sexual integral</strong>, <strong>acompañamiento empático</strong> y <strong>tecnología</strong>: contenidos verificados por profesionales y un <strong>chatbot educativo 24/7</strong> que responde dudas inmediatas y deriva a especialistas cuando es necesario. Todo en un entorno <strong>anónimo y seguro</strong>.</p>
+        <p>Hoy seguimos construyendo con colegios, familias y organizaciones para que hablar de estos temas sea más fácil, informado y sin vergüenza.</p>
+      </div>
+
+      <div class="card">
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/B8LwC_fYlRA?rel=0&modestbranding=1&playsinline=1"
+            title="EntreNos Storytelling" loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- FAQ -->
   <section id="faq">
